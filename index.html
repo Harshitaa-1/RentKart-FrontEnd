@@ -174,15 +174,7 @@
   background: linear-gradient(to right, #e0b82e, #fc9050);
   text-decoration: none;
 }
-.user-btn {
-      padding: 8px 15px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+
 
     @media (max-width: 768px) {
       .hero {
@@ -222,8 +214,6 @@
     <a href="cart.html">Cart</a>
     <a href="#">Orders</a>
     <a href="signup.html" >Signup/Login</a>
-    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-    <button id="userBtn" class="user-btn" style="display: none;"></button>
   </nav>
 </header>
 
@@ -270,15 +260,7 @@
       <button>Add to Cart</button>
     </div>
   </section>
-  <script>
-    const userBtn = document.getElementById("userBtn");
-    const username = localStorage.getItem("username");
-
-    if (username) {
-      userBtn.textContent = username;
-      userBtn.style.display = "inline-block";
-    }
-  </script>
+ 
 
   <!-- Footer -->
   <footer>
